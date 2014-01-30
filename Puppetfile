@@ -55,3 +55,26 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+# sources/recipes for Omega-required
+github "chrome",          "~> 1.1"
+github "firefox",         "~> 1.1"
+# github "java",            "~> 1.2"
+
+github "iterm2",          "~> 1.0"
+github "sublime_text_2",  "~> 1.1"
+github "intellij",        "~> 1.4"
+
+github "virtualbox",      "~> 1.0"
+github "vagrant",         "~> 3.0"
+github "p4merge",         "~> 0.0", :repo => "steinim/puppet-p4merge"
+
+# sources/recipes for bstreet-desired
+github "osx",             "~> 2.2"
+github "keepassx",        "~> 1.0"
+github "adium",           "~> 1.3"
+github "dropbox",         "~> 1.2"
+github "evernote",        "~> 2.0"
+
+github "vlc",             "~> 1.0"
+

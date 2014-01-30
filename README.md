@@ -51,64 +51,19 @@ Otherwise, follow instructions below.
 1. Go to the Downloads tab.
 1. Install the Command Line Tools.
 
-### Bootstrapping
-
-Create a **new** git repository somewhere on the internet.
-It can be private or public -- it really doesn't matter.
-If you're making a repository on GitHub, you _may not_ want to fork this repo
-to get started.
-The reason for that is that you can't really make private forks of public
-repositories easily.
-
-Once you've done that, you can run the following to bootstrap
-your boxen:
-
-```
-sudo mkdir -p /opt/boxen
-sudo chown ${USER}:staff /opt/boxen
-git clone https://github.com/boxen/our-boxen /opt/boxen/repo
-cd /opt/boxen/repo
-git remote rm origin
-git remote add origin <the location of my new git repository>
-git push -u origin master
-```
-
-Now that your boxen is bootstrapped, you can run the following to
-install the default configuration from this repo:
-
-```
-cd /opt/boxen/repo
-./script/boxen
-```
-
-You can also skip the above steps and <a href="#customizing">customize your
-boxen</a> before installing it.
-
-
 ### Distributing
 
-That's enough to get your boxen into a usable state on other machines,
-usually.
-From there, we recommend setting up
-[boxen-web](https://github.com/boxen/boxen-web)
-as an easy way to automate letting other folks install your boxen.
-
-If you _don't_ want to use boxen-web, folks can get using your boxen like so:
-
 ```
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
-git clone <location of my new git repository> /opt/boxen/repo
+git clone https://github.webapps.rr.com/bstreet/twc-boxen /opt/boxen/repo
 cd /opt/boxen/repo
-./script/boxen
-```
-
-Keep in mind this requires you to encrypt your hard drive by default.
-If you do not want to do encrypt your hard drive, you can use the `--no-fde`.
-
-```
 ./script/boxen --no-fde
 ```
+
+Keep in mind the bootstrap boxen encourages full disk encryption, which will conflict
+with the PGP full disk encryption installed by TWC.  Thus, the  `--no-fde`.
+
 
 It should run successfully, and should tell you to source a shell script
 in your environment.
@@ -129,22 +84,47 @@ If that runs cleanly, you're in good shape.
 
 This template project provides the following by default:
 
-* Homebrew
-* Git
-* Hub
-* dnsmasq w/ .dev resolver for localhost
-* rbenv
-* Full Disk Encryption requirement
-* Node.js 0.6
-* Node.js 0.8
-* Node.js 0.10
-* Ruby 1.8.7
-* Ruby 1.9.2
-* Ruby 1.9.3
-* Ruby 2.0.0
-* ack
-* Findutils
-* GNU tar
+| Source/Project  | Software | Versions | Notes |
+| --------------- | -------- | -------- | -------- |
+| Boxen bootstrap | Homebrew | N/A      | default provider |
+| Boxen bootstrap | Git      | N/A      | source control is cool |
+| Boxen bootstrap | Hub      | N/A      | git helper commands for GH |
+| Boxen bootstrap | dnsmasq w/ .dev resolver for localhost | N/A | - |
+| Boxen bootstrap | rbenv    | N/A      | dynamically use different ruby |
+| Boxen bootstrap | Ruby     | 1.8.7, 1.9.2, 1.9.3, 2.0.0 | scripting language |
+| Boxen bootstrap | Full Disk Encryption requirement | N/A | - |
+| Boxen bootstrap | Node.js  | 0.6, 0.8, 0.10 | JavaScript server |
+| Boxen bootstrap | ack      | N/A      | homebrew recursive text search |
+| Boxen bootstrap | Findutils | N/A     | - |
+| Boxen bootstrap | GNU tar  | N/A      | - |
+| project::omega  | chrome   | - | an adequate web browser |
+| project::omega  | firefox   | - | another web browser |
+| project::omega  | java JDK   | 7u45 | Java Developer Kit |
+| project::developer | iTerm2 | stable | better Terminal |
+| project::developer | p4merge | - | Visual merge tools for git |
+| project::developer | git-process | - | Github helper commands |
+| project::developer | virtualbox | - | Run virtual machines locally |
+| project::developer | vagrant | - | command-line manage virtual machines hosted in virtualbox, fusion, etc |
+| project::developer | IntelliJ | 12 "Ultimate" | an adequate IDE |
+| project::developer | SublimeText | 2 | fast text editor with Package Control |
+| project::developer | gradle, groovy | - | programming language & build tool |
+| project::developer | jq | - | command line tool for parsing JSON |
+| project::developer | tree | - | command line tool to dump directories |
+| project::developer | wget | - | command line tool to download URIs |
+| project::bstreet | adium | - | Instant Messaging |
+| project::bstreet | drobbox | - | Cloud file sharing & storage |
+| project::bstreet | keepassx | - | free password manager |
+| project::bstreet | vlc | - | Plays any video file |
+| project::bstreet | OS X config | - | settings for Finder, etc |
+| project::bstreet | imagemagic | - | Image optimizations |
+| project::bstreet | phantomJS | - | ... |
+| project::bstreet | watch | - | command line tool for monitoring & executing |
+| project::bstreet | oh-my-zsh | - | plugins for ZSH (nice git status) |
+| project::bstreet | more SublimeText packages | - | awk, AsciiDoc, CssComb, Prefixr, Puppet, Vlt |
+| project::bstreet | more iTerm2 configs | - | colors |
+| project::bstreet | TBD | - | ... |
+
+
 
 ## Customizing
 
