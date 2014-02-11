@@ -1,0 +1,35 @@
+---
+#
+# See http://docs.puppetlabs.com/hiera/1/configuring.html
+# See http://docs.puppetlabs.com/hiera/1/puppet.html
+#
+# For example, on "jdigger"'s work MBP he has a "fact" defined
+#   as {::boxen_project_01 => 'developer'}
+# That means that the following files are merged:
+# 
+# people/jdigger/nodes/Jims-MacBook-Pro-2.yaml  # hostname
+# people/jdigger/nodes/common.yaml
+# people/jdigger.yaml
+# projects/developer.yaml
+
+:yaml:
+  :datadir: "/opt/boxen/repo/config"
+
+:hierarchy:
+  - "people/%{::github_login}/nodes/%{::hostname}"
+  - "people/%{::github_login}/nodes/%{::clientcert}"
+  - "people/%{::github_login}/nodes/common"
+  - "people/%{::github_login}"
+  - "nodes/%{::clientcert}"
+  - "nodes/common"
+  - "projects/%{::boxen_project_01}"
+  - "projects/%{::boxen_project_02}"
+  - "projects/%{::boxen_project_03}"
+  - "projects/%{::boxen_project_04}"
+  - "projects/%{::boxen_project_05}"
+  - "projects/%{::boxen_project_06}"
+  - "projects/%{::boxen_project_07}"
+  - "projects/%{::boxen_project_08}"
+  - "projects/%{::boxen_project_09}"
+  - "projects/%{::boxen_project_10}"
+  - "projects/common"
