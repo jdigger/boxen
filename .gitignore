@@ -1,4 +1,4 @@
-/.bundle
+.bundle
 /.librarian
 /.projects
 /.snapshot
@@ -11,4 +11,8 @@
 !/shared/README.md
 /vendor/gems/
 
+install.log
 /vendor/puppet/cache/
+/vendor/puppet/source/
+
+modules/*/spec/fixtures/modules
