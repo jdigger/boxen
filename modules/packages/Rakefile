@@ -1,0 +1,8 @@
+require 'rubygems'
+require 'puppetlabs_spec_helper/rake_tasks'
+require 'puppet-lint'
+
+# we don't control what is in "shared/*" or the fixtures
+PuppetLint.configuration.ignore_paths = [/spec\/fixtures/, /^shared\//]
+
+PuppetLint.configuration.send("disable_80chars")

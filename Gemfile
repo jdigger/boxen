@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
+puppetversion = ENV['PUPPET_VERSION']
+gem 'puppet', puppetversion, :require => false
 gem "boxen",                  "~> 2.0.4"
 gem "hiera",                  "~> 1.1"
 gem "librarian-puppet",       "~> 0.9.9"
-gem "puppet",                 "3.3.1"
 gem "puppet-lint",            "0.3.2"
 gem "puppetlabs_spec_helper", "0.4.1"
 gem "open4",                  "~> 1.3"
