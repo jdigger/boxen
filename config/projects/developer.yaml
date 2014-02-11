@@ -1,0 +1,39 @@
+---
+classes:
+  - projects::developer
+
+ruby::global::version: '1.9.3'
+
+intellij::edition: 'ultimate'
+intellij::version: '12.1.6'   # still requires a Java 6 runtime :-(
+
+# "Sublime" is not in the name and alphabetized to make it easier to track
+sublime_text_2::packages:
+  'AsciiDoc':
+    source: 'SublimeText/AsciiDoc'
+  'BracketHighlighter':
+    source: 'facelessuser/BracketHighlighter'
+  'CodeIntel':
+    source: 'SublimeCodeIntel/SublimeCodeIntel'
+  'Emmet':
+    source: 'sergeche/emmet-sublime'
+  'Git':
+    source: 'kemayo/sublime-text-git'
+  'GitGutter':
+    source: 'jisaacks/GitGutter'
+  'IndentXML':
+    source: 'alek-sys/sublimetext_indentxml'
+  'Linter':
+    source: 'SublimeLinter/SublimeLinter'
+  'Package Control':
+    source: 'wbond/sublime_package_control'
+  'Prefixr':
+    source: 'wbond/sublime_prefixr'
+  'PrettyJson':
+    source: 'dzhibas/SublimePrettyJson'
+  'Puppet':
+    source: 'russCloak/SublimePuppet'
+  'SideBarEnhancements':
+    source: 'titoBouzout/SideBarEnhancements'
+  'Sublime Linter':
+    source: 'SublimeLinter/SublimeLinter'

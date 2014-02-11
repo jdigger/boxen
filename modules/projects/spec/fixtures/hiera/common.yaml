@@ -1,0 +1,21 @@
+---
+packages::sublime_text_2_package_management::packages:
+  'Git':
+    source: 'kemayo/sublime-text-git'
+  'GitGutter':
+    source: 'jisaacks/GitGutter'
+
+boxen::config::home: '/opt/boxen'
+boxen::config::repodir: '/opt/boxen/repo'
+boxen::config::reponame: 'repo'
+boxen::config::srcdir: '/opt/boxen/repo/srcdir'
+boxen::config::cachedir: '/opt/boxen/repo/cachdir'
+boxen::config::bindir: '/opt/boxen/repo/bindir'
+boxen::config::configdir: '/opt/boxen/repo/configdir'
+boxen::config::datadir: '/opt/boxen/repo/datadir'
+boxen::config::envdir: '/opt/boxen/repo/envdir'
+boxen::config::homebrewdir: '/opt/boxen/repo/homebrewdir'
+boxen::config::logdir: '/opt/boxen/repo/logdir'
+boxen::config::socketdir: '/opt/boxen/repo/socketdir'
+boxen::config::login: 'github_login'
+boxen::config::repo_url_template: 'boxen_repo_url_template'

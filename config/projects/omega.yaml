@@ -1,0 +1,24 @@
+---
+classes:
+  - projects::omega
+  - projects::developer
+
+packages::java7::update: 'u45'
+
+
+# "Sublime" is not in the name and alphabetized to make it easier to track
+sublime_text_2::packages:
+  'CSScomb':
+    source: 'csscomb/csscomb-for-sublime'
+  'Git':
+    source: 'kemayo/sublime-text-git'
+  'GitGutter':
+    source: 'jisaacks/GitGutter'
+  'IndentXML':
+    source: 'alek-sys/sublimetext_indentxml'
+  'Linter':
+    source: 'SublimeLinter/SublimeLinter'
+  'Sublime Linter':
+    source: 'SublimeLinter/SublimeLinter'
+  'Vlt':
+    source: 'tomalec/Sublime-Text-2-Vlt-Plugin'
