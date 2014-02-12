@@ -1,33 +1,29 @@
 # Project Manifests
 
-Project manifests live in `modules/projects/manifests/$project.pp`. A
-simple project manifest example:
+Project manifests live in `modules/projects/manifests/${project}.pp`, where
+`$project` is the name of the project.
 
-```puppet
-class projects::trollin {
-  include icu4c
-  include phantomjs
+To modularize further for a single user, create a subdirectory with the
+project name and put the additional manifests in there.
 
-  boxen::project { 'trollin':
-    dotenv        => true,
-    elasticsearch => true,
-    mysql         => true,
-    nginx         => true,
-    redis         => true,
-    ruby          => '1.9.3',
-    source        => 'boxen/trollin'
-  }
+
+## Hiera
+
+Hiera data is also supported per-user and per-project.
+
+See [`/opt/boxen/repo/config/hiera.yaml`](../../config/hiera.yaml) for the specifics.
+
+**A LOT OF CONFIGURATION IS DONE VIA HIERA** so it is worth understanding how that works.
+
+
+## Facter Facts
+
+Projects are "selected" by way of "facts" and control the order in which Hiera
+data is discovered. For example, given a `~/.boxen/config.json` file
+```json
+{
+  "boxen_project_01": "omega",
+  "boxen_project_02": "developer"
 }
 ```
-
-With the above, as long as our app is configured to listen on a **socket** at
-`"#{ENV['BOXEN_SOCKET_DIR']}"/trollin`, you'll now be able to run its local
-server and visit http://trollin.dev/ to access the app in dev.
-
-Provide the full repository URL in the 'source' option when referencing
-code that is not hosted at github.com, such as Github Enterprise
-repositories.
-
-For further documentation on how to use the `boxen::project` type,
-take a look at the documentation in the
-[source](https://github.com/boxen/puppet-boxen/blob/master/manifests/project.pp#L1-L61).
+then both the "omega" and "developer" projects will be applied, and Hiera settings in "omega" will take precidence over settings in "developer."
