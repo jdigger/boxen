@@ -54,7 +54,8 @@ sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
 git clone https://github.com/jdigger/boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
-./script/boxen-bootstrap --no-fde
+./script/boxen-bootstrap
+./script/boxen --no-fde
 ```
 
 Keep in mind the bootstrap boxen encourages full disk encryption, which will conflict
@@ -65,7 +66,7 @@ in your environment.
 
 For users without a bash or zsh config or a `~/.profile` file,
 Boxen will create a shim for you that will work correctly.
-If you do have a `~/.bashrc` or `~/.zshrc`, your shell will not use
+If you do have a `~/.bashrc` or `~/.zshrc`, your shell probably will not use
 `~/.profile` so you'll need to add a line like so at _the end of your config_:
 
 ``` sh
