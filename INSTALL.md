@@ -54,7 +54,7 @@ sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
 git clone https://github.com/jdigger/boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
-./script/boxen --no-fde
+./script/boxen-bootstrap --no-fde
 ```
 
 Keep in mind the bootstrap boxen encourages full disk encryption, which will conflict
@@ -73,5 +73,5 @@ If you do have a `~/.bashrc` or `~/.zshrc`, your shell will not use
 ```
 
 Once your shell is ready, open a new tab/window in your Terminal
-and you should be able to successfully run `boxen --env`.
+and you should be able to successfully run `/opt/boxen/repo/script/boxen --env`.
 If that runs cleanly, you're in good shape.
