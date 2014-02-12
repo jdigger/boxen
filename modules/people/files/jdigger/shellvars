@@ -1,0 +1,11 @@
+#!/bin/sh
+
+###################
+# Set JDK 1.7 as the default
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+
+###################
+# Set textmate as our default command line editor
+#export EDITOR='mate -w'
+# Set Sublime as our default command line editor
+export EDITOR='subl'

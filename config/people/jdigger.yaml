@@ -1,0 +1,41 @@
+---
+calibre::version: '1.22.0'
+
+# "Sublime" is not in the name and alphabetized to make it easier to track
+sublime_text_2::packages:
+  'AsciiDoc':
+    source: 'SublimeText/AsciiDoc'
+  'BracketHighlighter':
+    source: 'facelessuser/BracketHighlighter'
+  'CodeIntel':
+    source: 'SublimeCodeIntel/SublimeCodeIntel'
+  'CSScomb':
+    source: 'csscomb/csscomb-for-sublime'
+  'Emmet':
+    source: 'sergeche/emmet-sublime'
+  'Git':
+    source: 'kemayo/sublime-text-git'
+  'GitGutter':
+    source: 'jisaacks/GitGutter'
+  'IndentXML':
+    source: 'alek-sys/sublimetext_indentxml'
+  'Linter':
+    source: 'SublimeLinter/SublimeLinter'
+  'LiveReload':
+    source: 'dz0ny/LiveReload-sublimetext2.git'
+  'Markdown-Preview':
+    source: 'revolunet/sublimetext-markdown-preview'
+  'Package Control':
+    source: 'wbond/sublime_package_control'
+  'Pandoc':
+    source: 'tbfisher/sublimetext-Pandoc'
+  'Prefixr':
+    source: 'wbond/sublime_prefixr'
+  'PrettyJson':
+    source: 'dzhibas/SublimePrettyJson'
+  'Puppet':
+    source: 'russCloak/SublimePuppet'
+  'SideBarEnhancements':
+    source: 'titoBouzout/SideBarEnhancements'
+  'Sublime Linter':
+    source: 'SublimeLinter/SublimeLinter'

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#############################################################
+# Generic configuration that applies to all shells
+#############################################################
+
+###################
+# Load paths and environment variables
+source ~/.shellvars
+source ~/.shellpaths
+source ~/.shellaliases

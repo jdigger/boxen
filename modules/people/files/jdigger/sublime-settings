@@ -1,0 +1,22 @@
+{
+	// **********************************************************************
+	//
+	// This file is managed by Boxen/Puppet
+	//
+	// Changes made in here will be lost the next time boxen is run
+	//
+	// **********************************************************************
+
+	"font_size": 15.0,
+
+	// The number of spaces a tab is considered equal to
+	"tab_size": 4,
+
+	// Set to true to insert spaces when tab is pressed
+	"translate_tabs_to_spaces": true,
+
+	"ignored_packages":
+	[
+		"Vintage"
+	]
+}

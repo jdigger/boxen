@@ -1,0 +1,42 @@
+fixtures:
+  symlinks:
+    people: "#{source_dir}"
+    packages: "#{source_dir}/../packages"
+  repositories:
+    stdlib:
+      repo: "git://github.com/puppetlabs/puppetlabs-stdlib"
+      ref: "4.1.0"
+    boxen:
+      repo: "git://github.com/boxen/puppet-boxen"
+      ref: "3.4.2"
+    repository:
+      repo: "git://github.com/boxen/puppet-repository"
+      ref: "2.2.0"
+    chrome:
+      repo: "git://github.com/boxen/puppet-chrome"
+    git:
+      repo: "git://github.com/boxen/puppet-git"
+    homebrew:
+      repo: "git://github.com/boxen/puppet-homebrew"
+    inifile:
+      repo: "git://github.com/puppetlabs/puppetlabs-inifile"
+    firefox:
+      repo: "git://github.com/boxen/puppet-firefox"
+    intellij:
+      repo: "git://github.com/boxen/puppet-intellij"
+    iterm2:
+      repo: "git://github.com/boxen/puppet-iterm2"
+    p4merge:
+      repo: "git://github.com/steinim/puppet-p4merge"
+    ruby:
+      repo: "git://github.com/boxen/puppet-ruby"
+    sourcetree:
+      repo: "git://github.com/boxen/puppet-sourcetree"
+    sublime_text_2:
+      repo: "git://github.com/boxen/puppet-sublime_text_2"
+    vagrant:
+      repo: "git://github.com/boxen/puppet-vagrant"
+    virtualbox:
+      repo: "git://github.com/boxen/puppet-virtualbox"
+    wget:
+      repo: "git://github.com/boxen/puppet-wget"
