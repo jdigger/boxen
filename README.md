@@ -9,6 +9,6 @@ things done.
 
 ## Halp!
 
-See [FAQ](https://github.com/boxen/our-boxen/blob/master/docs/faq.md).
+See [FAQ](FAQ.md).
 
 Use Issues or #boxen on irc.freenode.net.
