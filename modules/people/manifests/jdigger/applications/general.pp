@@ -11,7 +11,6 @@ class people::jdigger::applications::general {
   include 'chrome'
   include 'cloudapp'
   include 'cyberduck'
-  include 'dnsmasq'
   include 'firefox'
   include 'git'
   include 'googledrive'
