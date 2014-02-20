@@ -13,7 +13,7 @@ class people::jdigger::dotfiles {
   $home = "/Users/${::boxen_user}"
 
   repository { 'oh-my-zsh' :
-    source => 'git@github.com:jdigger/oh-my-zsh.git',
+    source => 'https://github.com/jdigger/oh-my-zsh.git',
     path   => "${home}/.oh-my-zsh",
   }
 
