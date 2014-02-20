@@ -14,6 +14,7 @@ class people::jdigger::osx {
 
   osx::recovery_message { 'If this Mac is found, please call 234-567-9559': }
 
+  include osx::keyboard::capslock_to_control  # disable CAPSLOCK and make it be Ctl instead
   # include osx::global::disable_autocorrect    # disables spelling autocorrection
   include osx::global::disable_key_press_and_hold         # disable press-and-hold for accented character entry
   include osx::global::disable_remote_control_ir_receiver # disable remote control infrared receiver
