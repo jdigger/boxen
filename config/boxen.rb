@@ -19,7 +19,7 @@
 # ENV["BOXEN_WEB_HOOK_URL"] = 'https://some-uri.com/boxen'
 #
 # required for Github Enterprise
-ENV["BOXEN_GITHUB_ENTERPRISE_URL"] = 'https://github.webapps.rr.com/'
+#ENV["BOXEN_GITHUB_ENTERPRISE_URL"] = 'https://github.webapps.rr.com/'
 
 # required for Github Enterprise (defaults to "https://github.com/%s")
-ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.webapps.rr.com/%s'
+#ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.webapps.rr.com/%s'
