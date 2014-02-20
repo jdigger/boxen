@@ -84,12 +84,11 @@ github "caffeine",       "~> 1.0"
 github "kindle",         "~> 1.0"
 
 # Waiting for "boxen/puppet-calibre" to support parameters
-mod "calibre", :git => "https://github.com/jdigger/puppet-calibre", :ref => 'master'
+github "calibre",        "~> 3.1"
 
 # sources/recipes for Omega-required
 github "chrome",          "~> 1.1"
 github "firefox",         "~> 1.1"
-# github "java",            "~> 1.2"
 
 github "iterm2",          "~> 1.0"
 github "sublime_text_2",  "~> 1.1"
