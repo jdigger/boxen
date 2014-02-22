@@ -274,6 +274,11 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: glarizza/puppet-property_list_key
+  specs:
+    puppet-property_list_key (0.2.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.0)
@@ -334,6 +339,7 @@ DEPENDENCIES
   phantomjs (~> 2.0)
   pkgconfig (~> 1.0)
   puppet-module-data (~> 0.0)
+  puppet-property_list_key (~> 0.2)
   repository (~> 2.2)
   ruby (~> 7.0)
   skitch (~> 1.0)

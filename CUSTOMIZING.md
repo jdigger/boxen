@@ -64,6 +64,14 @@ See [the documentation in the `modules/packages`](modules/packages/README.md) di
 **See the [Style Guide for this project](STYLE_GUIDE.md) for a lot more information!!**
 
 
+## OS X Plists
+
+Support for simple plist modifications is done via the built-in `boxen::osx_defaults`
+module. For more sophisticated needs, such as hashes, arrays, dictionaries, etc. the
+[Puppet Property List module](https://github.com/glarizza/puppet-property_list_key) has
+been added.
+
+
 ## Binary packages
 
 We support binary packaging for everything in Homebrew, rbenv, and nvm.

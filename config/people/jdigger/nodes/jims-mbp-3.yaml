@@ -1,0 +1,5 @@
+---
+boxen::security::require_password: true
+ruby::global::version: '2.0.0'
+people::jdigger::system_roles:
+  - work

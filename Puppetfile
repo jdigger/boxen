@@ -53,6 +53,7 @@ github "ruby",       "~> 7.0"
 github "stdlib",     "~> 4.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "~> 1.0"
 github "xquartz",    "~> 1.1"
+github "puppet-property_list_key", "~> 0.2", :repo => "glarizza/puppet-property_list_key"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

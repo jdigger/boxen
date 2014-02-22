@@ -11,6 +11,7 @@ class people::jdigger::applications::general {
   include 'chrome'
   include 'cloudapp'
   include 'cyberduck'
+  include 'dropbox'
   include 'firefox'
   include 'git'
   include 'googledrive'
@@ -43,5 +44,7 @@ class people::jdigger::applications::general {
     source   => 'http://macapps.mooregreatsoftware.com.s3.amazonaws.com/Windownaut-1.2.6.dmg',
     provider => appdmg,
   }
+
+  include 'iterm2::colors::solarized_dark'
 
 }
