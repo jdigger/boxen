@@ -26,11 +26,12 @@ class people::jdigger::applications::general {
   include 'packages::bookmacster'
   include 'packages::hermes'
   include 'packages::lastpass'
+  include 'packages::sourcetree_cli'
+  include 'people::jdigger::applications::adium'
   include 'skitch'
   include 'skydrive'
   include 'skype'
   include 'sourcetree'
-  include 'packages::sourcetree_cli'
   include 'spotify'
   include 'sublime_text_2'
   include 'tmux'
@@ -45,6 +46,6 @@ class people::jdigger::applications::general {
     provider => appdmg,
   }
 
-  include 'iterm2::colors::solarized_dark'
+  # include 'iterm2::colors::solarized_dark'
 
 }

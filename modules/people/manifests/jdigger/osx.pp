@@ -18,34 +18,6 @@ class people::jdigger::osx {
     user   => $::boxen_user,
   }
 
-  $home = "/Users/${::boxen_user}"
-
-  property_list_key { 'Adium users':
-    path       => "${home}/Library/Application Support/Adium 2.0/Users/Default/Accounts.plist",
-    key        => 'Accounts',
-    value      => [
-      {
-        'Service'  => 'GTalk',
-        'UID'      => 'moore.jim@gmail.com',
-        'Type'     => 'libpurple-jabber-gtalk',
-        'ObjectID' => '1',
-      },
-      {
-        'Service'  => 'Yahoo!',
-        'UID'      => 'jim_moore',
-        'Type'     => 'libpurple-Yahoo!',
-        'ObjectID' => '2',
-      },
-      {
-        'Service'  => 'AIM',
-        'UID'      => 'jdiggerj',
-        'Type'     => 'libpurple-oscar-AIM',
-        'ObjectID' => '3',
-      },
-    ],
-    value_type => 'array',
-  }
-
   include people::jdigger::osx::trackpad::threeFingerDrag
 
   osx::recovery_message { 'If this Mac is found, please call 234-567-9559': }
