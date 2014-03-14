@@ -98,6 +98,7 @@ github "intellij",        "~> 1.4"
 github "virtualbox",      "~> 1.0"
 github "vagrant",         "~> 3.0"
 github "p4merge",         "~> 0.0", :repo => "steinim/puppet-p4merge"
+github "docker",          "~> 1.0", :repo => "morgante/puppet-docker"
 
 # sources/recipes desired
 github "osx",             "~> 2.2"
