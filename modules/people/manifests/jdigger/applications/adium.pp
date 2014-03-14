@@ -38,6 +38,12 @@ class people::jdigger::applications::adium {
     value => 'Alphabetical',
   }
 
+  people::jdigger::applications::adium_pref { 'Adium tab switching':
+    file  => 'Chat Cycling',
+    key   => 'Tab Switching Keys',
+    value => 2, # Brackets: Cmd-[  Cmd-]
+  }
+
   people::jdigger::applications::adium_pref { 'Adium message display style path':
     file  => 'WebKit Message Display',
     key   => 'Current Style Path',
