@@ -33,10 +33,15 @@ How do you do it?
 
 #### OS X 10.9 (Mavericks)
 
-If you are using [`b26abd0` of boxen-web](https://github.com/boxen/boxen-web/commit/b26abd0d681129eba0b5f46ed43110d873d8fdc2)
-or newer, it will be automatically installed as part of Boxen.
-Otherwise, follow instructions below.
+**Note**
+If you are creating a fresh install on Xcode 5.1 there is a clang issue with
+certain Ruby Gems. There is a Stackoverflow post [here](http://stackoverflow.com/questions/22352838/ruby-gem-install-json-fails-on-mavericks-and-xcode-5-1-unknown-argument-mul)
 
+To run the Boxen script follow these instructions
+```
+cd /opt/boxen/repo
+ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future ./script/boxen
+```
 
 #### OS X < 10.9
 
