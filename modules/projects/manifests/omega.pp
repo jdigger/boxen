@@ -7,7 +7,7 @@
 #
 class projects::omega {
 
-  include 'packages::java7'
+  include 'java'
   include 'projects::omega::repositories'
 
   # vagrant::box { 'Omega AEM 5.6 Base 20140107':
