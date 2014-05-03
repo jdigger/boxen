@@ -2,10 +2,12 @@
 classes:
   - projects::developer
 
-ruby::global::version: '1.9.3'
+# See https://github.com/boxen/puppet-java for docs
+java::update_version: 55
 
+# See https://github.com/boxen/puppet-intellij for docs
 intellij::edition: 'ultimate'
-intellij::version: '12.1.6'   # still requires a Java 6 runtime :-(
+intellij::version: '13.1.2'
 
 # "Sublime" is not in the name and alphabetized to make it easier to track
 sublime_text_2::packages:

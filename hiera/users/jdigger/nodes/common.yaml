@@ -6,14 +6,11 @@ classes:
   - packages::git_process
   - packages::sublime_text_2_cli
   - packages::sublime_text_2_package_management
-  - ruby::global
   - sublime_text_2
   - wget
 
 boxen::security::require_password: true
 boxen::security::screensaver_delay_sec: 5
-
-ruby::global::version: '2.0.0'
 
 people::jdigger::system_roles:
   - workstation

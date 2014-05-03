@@ -16,7 +16,6 @@ class projects::developer::applications {
   include 'packages::sublime_text_2_cli'
   include 'packages::sublime_text_2_package_management'
   include 'packages::tree'
-  include 'ruby::global'
   include 'sourcetree'
   include 'sublime_text_2'
   include 'vagrant'

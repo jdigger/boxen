@@ -1,5 +1,0 @@
----
-boxen::security::require_password: true
-ruby::global::version: '1.8.7'
-people::jdigger::system_roles:
-  - work

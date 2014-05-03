@@ -3,9 +3,6 @@ classes:
   - projects::omega
   - projects::developer
 
-packages::java7::update: 'u45'
-
-
 # "Sublime" is not in the name and alphabetized to make it easier to track
 sublime_text_2::packages:
   'CSScomb':
