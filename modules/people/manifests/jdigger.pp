@@ -12,12 +12,4 @@ class people::jdigger {
   include people::jdigger::sublime_text_2
   include people::jdigger::osx
 
-  ##########
-  # TODO
-  ##########
-
-  # Add ~/.ssh/config
-  # Add ~/.ssh/knownhosts
-  # Add ~/bin/gw
-
 }

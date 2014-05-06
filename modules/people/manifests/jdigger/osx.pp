@@ -54,4 +54,26 @@ class people::jdigger::osx {
   include osx::no_network_dsstores    # disable creation of .DS_Store files on network shares
   # include osx::software_update        # download and install software updates
 
+  host {
+    # Dispatchers
+    'webcms-web01.timewarnercable.com': ip => '68.168.70.16';
+    'webcms-web02.timewarnercable.com': ip => '68.168.70.144';
+    'webcms-web03.timewarnercable.com': ip => '68.168.71.16';
+    'webcms-web04.timewarnercable.com': ip => '68.168.71.144';
+    'webcms-web05.timewarnercable.com': ip => '68.168.70.77';
+    'webcms-web06.timewarnercable.com': ip => '68.168.70.207';
+    'webcms-web07.timewarnercable.com': ip => '68.168.71.79';
+    'webcms-web08.timewarnercable.com': ip => '68.168.71.207';
+
+    # publishers
+    'webcms-pub01.timewarnercable.com': ip => '68.168.71.15';
+    'webcms-pub02.timewarnercable.com': ip => '68.168.71.143';
+    'webcms-pub03.timewarnercable.com': ip => '68.168.71.17';
+    'webcms-pub04.timewarnercable.com': ip => '68.168.71.145';
+    'webcms-pub05.timewarnercable.com': ip => '68.168.70.79';
+    'webcms-pub06.timewarnercable.com': ip => '68.168.70.207';
+    'webcms-pub07.timewarnercable.com': ip => '68.168.71.79';
+    'webcms-pub08.timewarnercable.com': ip => '68.168.71.207';
+  }
+
 }

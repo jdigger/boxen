@@ -28,7 +28,8 @@ class people::jdigger::applications::general {
   include 'packages::hermes'
   include 'packages::lastpass'
   include 'packages::sourcetree_cli'
-  # include 'people::jdigger::applications::adium'
+  include 'packages::truecrypt'
+  include 'people::jdigger::applications::adium'
   include 'skitch'
   include 'skydrive'
   include 'skype'
@@ -42,10 +43,10 @@ class people::jdigger::applications::general {
 
   # Window mover, resizer and more
   # http://www.binarybakery.com/product.php?app=windownaut
-  package { 'Windownaut':
-    source   => 'http://macapps.mooregreatsoftware.com.s3.amazonaws.com/Windownaut-1.2.6.dmg',
-    provider => appdmg,
-  }
+  # package { 'Windownaut':
+  #   source   => 'http://macapps.mooregreatsoftware.com.s3.amazonaws.com/Windownaut-1.2.6.dmg',
+  #   provider => appdmg,
+  # }
 
   # include 'iterm2::colors::solarized_dark'
 
