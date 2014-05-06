@@ -35,11 +35,8 @@
 
 :hierarchy:
   - "users/%{::github_login}/nodes/%{::hostname}"
-  - "users/%{::github_login}/nodes/%{::clientcert}"
   - "users/%{::github_login}/nodes/common"
   - "users/%{::github_login}"
-  - "nodes/%{::clientcert}"
-  - "nodes/common"
   - "projects/%{::boxen_project_01}"
   - "projects/%{::boxen_project_02}"
   - "projects/%{::boxen_project_03}"
