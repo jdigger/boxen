@@ -144,11 +144,6 @@ GITHUBTARBALL
     kindle (1.0.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-launchbar
-  specs:
-    launchbar (1.0.2)
-
-GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.3)
@@ -284,6 +279,11 @@ GITHUBTARBALL
     puppet-property_list_key (0.2.0)
 
 GITHUBTARBALL
+  remote: jdigger/puppet-launchbar
+  specs:
+    launchbar (1.0.3)
+
+GITHUBTARBALL
   remote: morgante/puppet-docker
   specs:
     docker (1.0.3)
@@ -340,7 +340,7 @@ DEPENDENCIES
   java (~> 1.5)
   keepassx (~> 1.0)
   kindle (~> 1.0)
-  launchbar (~> 1.0)
+  launchbar (~> 1.0.3)
   module-data (= 0.0.3)
   nginx (= 1.4.3)
   nodejs (= 3.7.0)
