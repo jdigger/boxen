@@ -3,20 +3,32 @@ calibre::version: '1.22.0'
 
 # "Sublime" is not in the name and alphabetized to make it easier to track
 sublime_text_2::packages:
+  'AAAPackageDev':  # package/snippet development
+    source: 'SublimeText/AAAPackageDev'
   'AsciiDoc':
     source: 'SublimeText/AsciiDoc'
+  'AsciiDoctor':
+    source: 'aslakknutsen/sublime-asciidoctor'
   'BracketHighlighter':
     source: 'facelessuser/BracketHighlighter'
-  'CodeIntel':
+  'CheckBounce':  # Spellchecking
+    source: 'phyllisstein/CheckBounce'
+  'CodeIntel':    # code intelligence and smart autocomplete engine
     source: 'SublimeCodeIntel/SublimeCodeIntel'
   'CSScomb':
     source: 'csscomb/csscomb-for-sublime'
   'Emmet':
     source: 'sergeche/emmet-sublime'
+  'Evernote':
+    source: 'jamiesun/SublimeEvernote'
+  'Gist':
+    source: 'condemil/Gist'
   'Git':
     source: 'kemayo/sublime-text-git'
   'GitGutter':
     source: 'jisaacks/GitGutter'
+#  'Google Spell Check':
+#    source: 'noahcoad/google-spell-check'  # does not yet work with "pure" git checkout
   'IndentXML':
     source: 'alek-sys/sublimetext_indentxml'
   'Linter':
@@ -29,12 +41,24 @@ sublime_text_2::packages:
     source: 'wbond/sublime_package_control'
   'Pandoc':
     source: 'tbfisher/sublimetext-Pandoc'
+  'Peek':   # provides quick access to documentation by opening help files in Quick Look
+    source: 'jlegewie/SublimePeek'
   'Prefixr':
     source: 'wbond/sublime_prefixr'
   'PrettyJson':
     source: 'dzhibas/SublimePrettyJson'
   'Puppet':
     source: 'russCloak/SublimePuppet'
+  'REPL':
+    source: 'wuub/SublimeREPL'
+  'RSpec':
+    source: 'SublimeText/RSpec'
+  'RSpecBuild':
+    source: 'erinata/SublimeRspecBuild'
+  'RubyTest':
+    source: 'maltize/sublime-text-2-ruby-tests'
+  'Sass':
+    source: 'nathos/sass-textmate-bundle'
   'SideBarEnhancements':
     source: 'titoBouzout/SideBarEnhancements'
   'Sublime Linter':

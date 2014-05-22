@@ -15,7 +15,5 @@ sublime_text_2::packages:
     source: 'alek-sys/sublimetext_indentxml'
   'Linter':
     source: 'SublimeLinter/SublimeLinter'
-  'Sublime Linter':
-    source: 'SublimeLinter/SublimeLinter'
   'Vlt':
     source: 'tomalec/Sublime-Text-2-Vlt-Plugin'
