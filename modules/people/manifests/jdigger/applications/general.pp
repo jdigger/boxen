@@ -22,6 +22,8 @@ class people::jdigger::applications::general {
   include 'iterm2::stable'
   include 'kindle'
   include 'launchbar'
+  include 'nodejs::global'
+  include 'nodejs::v0_10'
   include 'omnigraffle::pro'
   include 'packages::asciidoc'
   include 'packages::bookmacster'

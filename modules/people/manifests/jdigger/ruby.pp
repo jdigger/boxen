@@ -9,9 +9,9 @@ class people::jdigger::ruby {
   validate_re($ruby::global::version, '^\S+')
 
   ruby_gem { "asciidoctor for ${ruby::global::version}":
-    gem     => 'asciidoctor',
+    gem          => 'asciidoctor',
     ruby_version => $ruby::global::version,
-    version => '~> 0.1.4'
+    version      => '~> 0.1.4'
   }
 
 }
