@@ -23,3 +23,5 @@ ruby::version::alias:
   1.9.3: 1.9.3-p545
 
 launchbar::version: 5.6.4
+
+sourcetree::version: 1.9.2
