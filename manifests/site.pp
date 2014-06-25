@@ -1,8 +1,6 @@
 require boxen::environment
 require homebrew
 require gcc
-require git
-require dnsmasq
 
 Exec {
   group       => 'staff',
