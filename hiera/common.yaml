@@ -20,7 +20,7 @@ ruby::rbenv_plugins:
     source: sstephenson/ruby-build
 ruby::version::alias:
   2.0.0: 2.0.0-p451
-  1.9.3: 1.9.3-p545
+  1.9.3: 1.9.3-p547
 
 launchbar::version: 5.6.4
 

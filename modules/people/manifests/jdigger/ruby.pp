@@ -8,6 +8,8 @@ class people::jdigger::ruby {
 
   validate_re($ruby::global::version, '^\S+')
 
+  ruby::version { '1.9.3-p547': }
+
   ruby_gem { "asciidoctor for ${ruby::global::version}":
     gem          => 'asciidoctor',
     ruby_version => $ruby::global::version,
