@@ -28,6 +28,7 @@ class people::jdigger::applications::general {
   include 'packages::asciidoc'
   include 'packages::bookmacster'
   include 'packages::hermes'
+  include 'packages::jenv'
   include 'packages::lastpass'
   include 'packages::sourcetree_cli'
   include 'packages::truecrypt'

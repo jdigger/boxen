@@ -7,3 +7,9 @@
 # Jim's Scripts
 export PATH=$PATH:.
 export PATH=$PATH:~/bin
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
