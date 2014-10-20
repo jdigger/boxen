@@ -149,6 +149,11 @@ GITHUBTARBALL
     launchbar (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mongodb
+  specs:
+    mongodb (1.3.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.3)
@@ -342,6 +347,7 @@ DEPENDENCIES
   kindle (~> 1.0)
   launchbar (~> 1.1)
   module_data (= 0.0.3)
+  mongodb (~> 1.3)
   nginx (= 1.4.3)
   nodejs (= 3.8.1)
   omnigraffle (~> 1.3)

@@ -1,4 +1,6 @@
 ---
+ruby::global::version: "1.9.3-p547"
+
 classes:
   - intellij
   - iterm2::stable
