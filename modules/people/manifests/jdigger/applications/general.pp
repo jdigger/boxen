@@ -24,7 +24,6 @@ class people::jdigger::applications::general {
   include 'launchbar'
   include 'mongodb'
   include 'nodejs::global'
-  include 'nodejs::v0_10'
   include 'omnigraffle::pro'
   include 'packages::asciidoc'
   include 'packages::bookmacster'

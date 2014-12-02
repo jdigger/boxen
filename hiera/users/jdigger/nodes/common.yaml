@@ -1,5 +1,6 @@
 ---
 ruby::global::version: "1.9.3-p547"
+nodejs::version: "v0.10.1"
 
 classes:
   - intellij
