@@ -13,7 +13,7 @@ gem "deep_merge",             "~> 1.0"
 gem 'CFPropertyList',         '>= 2.2.6'
 
 group :development do
-  gem "aws-sdk", "~> 1.42"
+  gem "aws-sdk-core", "~> 2.0.11"
   gem "net-ssh"
   gem "rbvmomi"
 end
