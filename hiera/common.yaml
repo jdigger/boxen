@@ -23,6 +23,10 @@ ruby::version::alias:
   1.9.3: 1.9.3-p547
 
 launchbar::version: 5.6.4
+vagrant::version: 1.7.1
 
 sourcetree::version: 1.9.2
 nodejs::global::version: 'v0.10.1'
+
+virtualbox::version: 4.3.20
+virtualbox::patch_level: 96996

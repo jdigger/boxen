@@ -49,6 +49,11 @@ GITHUBTARBALL
     dnsmasq (2.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-docker
+  specs:
+    docker (0.8.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dropbox
   specs:
     dropbox (1.4.1)
@@ -261,7 +266,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
-    virtualbox (1.0.9)
+    virtualbox (1.0.13)
 
 GITHUBTARBALL
   remote: boxen/puppet-vlc
@@ -287,11 +292,6 @@ GITHUBTARBALL
   remote: glarizza/puppet-property_list_key
   specs:
     puppet-property_list_key (0.2.1)
-
-GITHUBTARBALL
-  remote: morgante/puppet-docker
-  specs:
-    docker (1.0.3)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -324,7 +324,7 @@ DEPENDENCIES
   crashplan (~> 1.0)
   cyberduck (~> 1.0)
   dnsmasq (= 2.0.1)
-  docker (~> 1.0)
+  docker (~> 0.8)
   dropbox (~> 1.2)
   evernote (~> 2.0)
   firefox (~> 1.1)
