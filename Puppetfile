@@ -84,7 +84,7 @@ github "heroku",         "~> 2.1"
 github "imagemagick",    "~> 1.2"
 github "intellij",       "~> 1.4"
 github "iterm2",         "~> 1.0"
-github "java",           "~> 1.5"
+github "java",           "~> 1.7.0" # currently a bug in 1.8 with ruby 2.0
 github "keepassx",       "~> 1.0"
 github "kindle",         "~> 1.0"
 github "launchbar",      "~> 1.1"
