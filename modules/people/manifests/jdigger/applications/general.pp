@@ -45,7 +45,12 @@ class people::jdigger::applications::general {
   include 'virtualbox'
   include 'zsh'
 
-  # Window mover, resizer and more
+  package { 'httpie':
+    provider => 'homebrew',
+    ensure => 'latest'
+  }
+
+# Window mover, resizer and more
   # http://www.binarybakery.com/product.php?app=windownaut
   # package { 'Windownaut':
   #   source   => 'http://macapps.mooregreatsoftware.com.s3.amazonaws.com/Windownaut-1.2.6.dmg',
