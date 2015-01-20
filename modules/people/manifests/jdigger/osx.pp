@@ -56,14 +56,46 @@ class people::jdigger::osx {
 
   host {
     # Dispatchers
-    'webcms-web01.timewarnercable.com': ip => '68.168.70.16';
-    'webcms-web02.timewarnercable.com': ip => '68.168.70.144';
-    'webcms-web03.timewarnercable.com': ip => '68.168.71.16';
-    'webcms-web04.timewarnercable.com': ip => '68.168.71.144';
-    'webcms-web05.timewarnercable.com': ip => '68.168.70.77';
-    'webcms-web06.timewarnercable.com': ip => '68.168.70.207';
-    'webcms-web07.timewarnercable.com': ip => '68.168.71.79';
-    'webcms-web08.timewarnercable.com': ip => '68.168.71.207';
+    'webcms-web01-business.timewarnercable.com':
+      ip => '68.168.70.16',
+      host_aliases => ['webcms-web01-residential.timewarnercable.com',
+                       'webcms-web01-ctmgr.timewarnercable.com'];
+    'webcms-web02-business.timewarnercable.com':
+      ip => '68.168.70.144',
+      host_aliases => ['webcms-web02-residential.timewarnercable.com',
+                       'webcms-web02-ctmgr.timewarnercable.com'];
+    'webcms-web03-business.timewarnercable.com':
+      ip => '68.168.71.16',
+      host_aliases => ['webcms-web03-residential.timewarnercable.com',
+                       'webcms-web03-ctmgr.timewarnercable.com'];
+    'webcms-web04-business.timewarnercable.com':
+      ip => '68.168.71.144',
+      host_aliases => ['webcms-web04-residential.timewarnercable.com',
+                       'webcms-web04-ctmgr.timewarnercable.com'];
+    'webcms-web05-business.timewarnercable.com':
+      ip => '68.168.70.77',
+      host_aliases => ['webcms-web05-residential.timewarnercable.com',
+                       'webcms-web05-ctmgr.timewarnercable.com'];
+    'webcms-web06-business.timewarnercable.com':
+      ip => '68.168.70.205',
+      host_aliases => ['webcms-web06-residential.timewarnercable.com',
+                       'webcms-web06-ctmgr.timewarnercable.com'];
+    'webcms-web07-business.timewarnercable.com':
+      ip => '68.168.71.77',
+      host_aliases => ['webcms-web07-residential.timewarnercable.com',
+                       'webcms-web07-ctmgr.timewarnercable.com'];
+    'webcms-web08-business.timewarnercable.com':
+      ip => '68.168.71.205',
+      host_aliases => ['webcms-web08-residential.timewarnercable.com',
+                       'webcms-web08-ctmgr.timewarnercable.com'];
+    'webcms-web09-business.timewarnercable.com':
+      ip => '68.168.70.31',
+      host_aliases => ['webcms-web09-residential.timewarnercable.com',
+                       'webcms-web09-ctmgr.timewarnercable.com'];
+    'webcms-web10-business.timewarnercable.com':
+      ip => '68.168.71.31',
+      host_aliases => ['webcms-web10-residential.timewarnercable.com',
+                       'webcms-web10-ctmgr.timewarnercable.com'];
 
     # publishers
     'webcms-pub01.timewarnercable.com': ip => '68.168.71.15';
@@ -74,6 +106,16 @@ class people::jdigger::osx {
     'webcms-pub06.timewarnercable.com': ip => '68.168.70.207';
     'webcms-pub07.timewarnercable.com': ip => '68.168.71.79';
     'webcms-pub08.timewarnercable.com': ip => '68.168.71.207';
+    'webcms-pub09.timewarnercable.com': ip => '68.168.70.235';
+    'webcms-pub10.timewarnercable.com': ip => '68.168.71.235';
+
+    # Prod Authors
+    'webcms-auth01.cdp.timewarnercable.com': ip => '68.168.70.15';
+    'webcms-auth02.cdp.timewarnercable.com': ip => '68.168.70.143';
+
+    # Beta
+    'beta01.timewarnercable.com': ip => '71.74.49.57';
+    'beta02.timewarnercable.com': ip => '71.74.49.58';
   }
 
 }
