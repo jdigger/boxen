@@ -29,10 +29,10 @@ class people::jdigger::dotfiles {
     source => 'puppet:///modules/people/jdigger/zprofile',
   }
 
-  file { "${home}/.gitconfig":
-    # This should probably be managed using the git module instead...
-    source => 'puppet:///modules/people/jdigger/gitconfig',
-  }
+  # file { "${home}/.gitconfig":
+  #   # This should probably be managed using the git module instead...
+  #   source => 'puppet:///modules/people/jdigger/gitconfig',
+  # }
 
   file { "${home}/.profile":
     source => 'puppet:///modules/people/jdigger/profile',

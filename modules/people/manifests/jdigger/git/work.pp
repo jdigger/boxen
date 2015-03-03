@@ -19,13 +19,13 @@ class people::jdigger::git::work {
   }
 
   repository { "${srcdir}/cq-gradle-plugins" :
-    source => 'https://github.webapps.rr.com/webcms/cq-gradle-plugins.git',
+    source => 'https://github.com/TWCable/cq-gradle-plugin.git',
     path   => "${srcdir}/cq-gradle-plugins",
   }
   ->
   git::config::local { "${srcdir}/cq-gradle-plugins":
     key   => 'user.email',
-    value => 'james.moore3@twcable.com',
+    value => 'moore.jim@gmail.com',
   }
 
   repository { "${srcdir}/git-process" :
