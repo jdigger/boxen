@@ -1,6 +1,6 @@
 ---
 ruby::global::version: "1.9.3-p547"
-nodejs::version: "v0.10.1"
+nodejs::global::version: "v0.12.0"
 vagrant::version: "1.7.2"
 
 classes:
