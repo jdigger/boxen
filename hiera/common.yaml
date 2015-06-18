@@ -16,7 +16,7 @@ ruby::rbenv_plugins:
     ensure: v1.2.0
     source: sstephenson/rbenv-vars
   ruby-build:
-    ensure: v20140420
+    ensure: v20150506
     source: sstephenson/ruby-build
 ruby::version::alias:
   2.0.0: 2.0.0-p451
@@ -25,8 +25,8 @@ ruby::version::alias:
 launchbar::version: 5.6.4
 vagrant::version: 1.7.1
 
-sourcetree::version: 1.9.2
-nodejs::global::version: 'v0.10.1'
+sourcetree::version: 2.0.5.2
+nodejs::global::version: 'v0.12.0'
 
-virtualbox::version: 4.3.20
-virtualbox::patch_level: 96996
+virtualbox::version: 4.3.28
+#virtualbox::patch_level: 96996
