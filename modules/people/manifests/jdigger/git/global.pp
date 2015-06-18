@@ -7,7 +7,7 @@ class people::jdigger::git::global {
 
   git::config::global {
     'user.name':     value  => 'Jim Moore';
-    'push.default':  value  => 'simple';
+    'push.default':  value  => 'current';
     'core.autocrlf': value  => 'input';
     'core.safecrlf': value  => 'warn';
     'core.editor':   value  => 'subl -w';
