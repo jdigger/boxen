@@ -32,7 +32,6 @@ class people::jdigger::applications::general {
   include 'packages::lastpass'
   include 'packages::springboot'
   include 'packages::sourcetree_cli'
-  include 'packages::truecrypt'
   include 'people::jdigger::applications::adium'
   include 'skitch'
   include 'skydrive'
