@@ -3,15 +3,15 @@ ruby::global::version: "1.9.3-p547"
 nodejs::global::version: "v0.12.0"
 vagrant::version: "1.7.2"
 
-classes:
-  - intellij
-  - iterm2::stable
-  - p4merge
-  - packages::git_process
-  - packages::sublime_text_2_cli
-  - packages::sublime_text_2_package_management
-  - sublime_text_2
-  - wget
+# classes:
+#   - intellij
+#   - iterm2::stable
+#   - p4merge
+#   - packages::git_process
+#   - packages::sublime_text_2_cli
+#   - packages::sublime_text_2_package_management
+#   - sublime_text_2
+#   - wget
 
 boxen::security::require_password: true
 boxen::security::screensaver_delay_sec: 5

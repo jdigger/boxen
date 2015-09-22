@@ -51,6 +51,7 @@ Service {
 
 Homebrew::Formula <| |> -> Package <| |>
 
-if hiera_array('classes', undef) {
-  hiera_include('classes')
-}
+include 'git'
+# if hiera_array('classes', undef) {
+#   hiera_include('classes')
+# }
