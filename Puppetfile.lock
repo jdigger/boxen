@@ -134,11 +134,6 @@ GITHUBTARBALL
     iterm2 (1.2.5)
 
 GITHUBTARBALL
-  remote: boxen/puppet-java
-  specs:
-    java (1.7.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-keepassx
   specs:
     keepassx (1.0.0)
@@ -342,7 +337,6 @@ DEPENDENCIES
   inifile (= 1.4.1)
   intellij (~> 1.4)
   iterm2 (~> 1.0)
-  java (~> 1.7.0)
   keepassx (~> 1.0)
   kindle (~> 1.0)
   launchbar (~> 1.1)

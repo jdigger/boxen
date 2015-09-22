@@ -5,23 +5,29 @@
 #
 class people::jdigger::applications::general {
 
-  include 'adium'
+  # include 'adium'
+  package { 'adium': provider => 'brewcask', ensure => '>= 1.5.10' }
   include 'augeas'
-  include 'caffeine'
+  # include 'caffeine'
+  package { 'caffeine': provider => 'brewcask', ensure => '>= 1.1.1' }
   include 'chrome'
   include 'cloudapp'
   include 'cyberduck'
   include 'docker'
-  include 'dropbox'
-  include 'firefox'
+  package { 'dropbox': provider => 'brewcask' }
+  package { 'firefox': provider => 'brewcask', ensure => '>=44.0' }
   include 'git'
   include 'googledrive'
   include 'graphviz'
   include 'heroku'
   # include 'intellij'
+  package { 'intellij-idea': provider => 'brewcask', ensure => '14.1.5' }
   include 'iterm2::stable'
+  package { 'java': provider => 'brewcask', ensure => '>= 1.8.0_74-b02' }
   include 'kindle'
-  include 'launchbar'
+  package { 'kitematic': provider => 'brewcask', ensure => '>= 0.10.0' }
+  # include 'launchbar'
+  package { 'launchbar': provider => 'brewcask', ensure => '5.6.4' }
   include 'mongodb'
   include 'nodejs::global'
   include 'omnigraffle::pro'
@@ -33,21 +39,22 @@ class people::jdigger::applications::general {
   include 'packages::springboot'
   include 'packages::sourcetree_cli'
   include 'people::jdigger::applications::adium'
+  package { 'path-finder': provider => 'brewcask' }
   include 'skitch'
   include 'skydrive'
-  include 'skype'
+  # include 'skype'
+  package { 'skype': provider => 'brewcask' }
   include 'sourcetree'
   include 'spotify'
-  include 'sublime_text_2'
+  # include 'sublime_text_2'
+  # package { 'sublime-text': provider => 'brewcask', ensure => 'latest' }
   include 'tmux'
   include 'vagrant'
+  # package { 'vagrant': provider => 'brewcask', ensure => 'latest' }
   include 'virtualbox'
   include 'zsh'
 
-  package { 'httpie':
-    provider => 'homebrew',
-    ensure => 'latest'
-  }
+  package { 'httpie': provider => 'homebrew', ensure => 'latest' }
 
 # Window mover, resizer and more
   # http://www.binarybakery.com/product.php?app=windownaut
