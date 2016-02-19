@@ -8,29 +8,43 @@
 # heart's content.
 
 # See https://github.com/boxen/puppet-ruby for docs
-ruby::global::version: "2.2.3"
-ruby::build::ensure: "v20151024"
-ruby::rbenv_plugins:
-  rbenv-vars:
-    ensure: v1.2.0
-    source: sstephenson/rbenv-vars
-  ruby-build:
-    ensure: v20131225.1
-    source: sstephenson/ruby-build
-  ruby-build:
-    ensure: v20150506
-    source: sstephenson/ruby-build
-ruby::version::alias:
-  2.0.0: 2.0.0-p353
-  2.0.0: 2.0.0-p647
-  2.0.0: 2.0.0-p451
-  1.9.3: 1.9.3-p547
+# ruby::global::version: "2.2.3"
+# ruby::build::ensure: "v20151024"
+# ruby::rbenv_plugins:
+#   rbenv-vars:
+#     ensure: v1.2.0
+#     source: sstephenson/rbenv-vars
+#   ruby-build:
+#     ensure: v20131225.1
+#     source: sstephenson/ruby-build
+#   ruby-build:
+#     ensure: v20150506
+#     source: sstephenson/ruby-build
+# ruby::version::alias:
+#   2.0.0: 2.0.0-p353
+#   2.0.0: 2.0.0-p647
+#   2.0.0: 2.0.0-p451
+#   1.9.3: 1.9.3-p547
 
-launchbar::version: 5.6.4
+# launchbar::version: 5.6.4
 vagrant::version: 1.7.1
 
-sourcetree::version: 2.0.5.2
-nodejs::global::version: 'v0.12.0'
+sourcetree::version: 2.2
+# nodejs::global::version: 'v0.12.0'
 
-virtualbox::version: 4.3.28
-#virtualbox::patch_level: 96996
+virtualbox::version: 5.0.14
+virtualbox::patch_level: 105127
+
+# Keep Docker up-to-date
+docker::compose::version: "1.6.0"
+docker::engine::version: "1.10.1"
+docker::machine::version: "0.6.0"
+docker::swarm::version: "1.1.0"
+
+# The name of the local VM
+docker::machinename: "local"
+
+# Where to store the configuration and virtual machines
+docker::configdir: "%{::boxen::config::configdir}/docker"
+docker::datadir: "%{::boxen::config::datadir}/docker"
+docker::logdir: "%{::boxen::config::logdir}/docker"

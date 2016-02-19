@@ -18,7 +18,7 @@ class people::jdigger::applications::general {
   include 'googledrive'
   include 'graphviz'
   include 'heroku'
-  include 'intellij'
+  # include 'intellij'
   include 'iterm2::stable'
   include 'kindle'
   include 'launchbar'

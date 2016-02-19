@@ -56,7 +56,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-docker
   specs:
-    docker (0.9.0)
+    docker (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-dropbox
@@ -77,11 +77,6 @@ GITHUBTARBALL
   remote: boxen/puppet-foreman
   specs:
     foreman (1.2.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-gcc
-  specs:
-    gcc (3.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
@@ -330,12 +325,11 @@ DEPENDENCIES
   crashplan (~> 1.0)
   cyberduck (~> 1.0)
   dnsmasq (= 2.0.1)
-  docker (~> 0.8)
+  docker (~> 1.0)
   dropbox (~> 1.2)
   evernote (~> 2.0)
   firefox (~> 1.1)
   foreman (= 1.2.0)
-  gcc (= 3.0.2)
   git (= 2.7.92)
   go (= 2.1.0)
   googledrive (~> 1.0)

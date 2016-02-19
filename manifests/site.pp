@@ -1,6 +1,10 @@
 require boxen::environment
 require homebrew
-require gcc
+
+# require gcc
+
+ensure_resource('homebrew::tap',
+    'homebrew/versions', { 'ensure' => 'present' })
 
 Exec {
   group       => 'staff',
@@ -72,7 +76,7 @@ node default {
   ruby::version { '1.9.3': }
   ruby::version { '2.0.0': }
   ruby::version { '2.1.8': }
-  ruby::version { '2.2.4': }
+  # ruby::version { '2.2.4': }
 
   # common, useful packages
   package {
@@ -81,6 +85,10 @@ node default {
       'findutils',
       'gnu-tar'
     ]:
+  }
+
+  package { 'boxen/brews/gcc5':
+      ensure  => '5.2.0'
   }
 
   # file { "${boxen::config::srcdir}/our-boxen":
