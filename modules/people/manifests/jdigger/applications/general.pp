@@ -7,6 +7,7 @@ class people::jdigger::applications::general {
 
   # include 'adium'
   package { 'adium': provider => 'brewcask', ensure => '>= 1.5.10' }
+  package { 'atom': provider => 'brewcask', ensure => '>= 1.5.3' }
   include 'augeas'
   # include 'caffeine'
   package { 'caffeine': provider => 'brewcask', ensure => '>= 1.1.1' }
